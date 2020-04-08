@@ -1,0 +1,58 @@
+[
+  {
+    "name": "apple",
+    "x": "36px",
+    "y": "80.9px",
+    "height": "123px",
+    "width": "131px"
+  },
+  {
+    "name": "cup",
+    "x": "232px",
+    "y": "148px",
+    "height": "109px",
+    "width": "179px"
+  },
+  {
+    "name": "hand-bag",
+    "x": "167px",
+    "y": "312px",
+    "height": "157px",
+    "width": "154px"
+  },
+  {
+    "name": "cell-phone",
+    "x": "419px",
+    "y": "219px",
+    "height": "171px",
+    "width": "77px"
+  },
+  {
+    "name": "male",
+    "x": "43px",
+    "y": "336px",
+    "height": "210px",
+    "width": "85px"
+  },
+  {
+    "name": "banana",
+    "x": "360px",
+    "y": "404px",
+    "height": "158px",
+    "width": "187px"
+  },
+  {
+    "name": "zebra",
+    "x": "496.5px",
+    "y": "9px",
+    "height": "210px",
+    "width": "206px"
+  },
+  {
+    "name": "female",
+    "x": "645px",
+    "y": "294px",
+    "height": "305px",
+    "width": "98px"
+  }
+]

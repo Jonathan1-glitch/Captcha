@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="timerCount hideTimer">
+      <span>Countdown</span>
+    </div>
+    <div class="form-content">
+      <div class="registration-dialogue">
+        <form>
+          <div class="input-userName">
+            <input type="text" name="userName" id="userNameInput" required />
+            <label for="userNameInput">User Name : </label>
+          </div>
+          <div class="input-backgroundSelect">
+            <select name="backgroundSelect" id="backgroundSelectInput" required>
+              <option value="mountain">Mountain</option>
+              <option value="sky">Sky</option>
+              <option value="waterfalls">Waterfalls</option>
+              <option value="river">River</option>
+              <option value="buildings">Buildings</option>
+              <option value="street">Street</option>
+              <option value="indoor">Indoor </option>
+            </select>
+            <label for="backgroundSelectInput">Select Background : </label>
+          </div>
+          <div class="input-backgroundSize">
+            <p>Select Background Size :</p>
+            <div class="backgroundSizeSelector">
+              <label for="backgroundSizeSmall"
+                >Small
+                <input
+                  type="radio"
+                  name="backgroundSize"
+                  value="small"
+                  id="backgroundSizeSmall"
+                  checked
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="backgroundSizeSelector">
+              <label for="backgroundSizeMedium"
+                >Medium
+                <input
+                  type="radio"
+                  name="backgroundSize"
+                  value="medium"
+                  id="backgroundSizeMedium"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="backgroundSizeSelector">
+              <label for="backgroundSizeLarge"
+                >Large
+                <input
+                  type="radio"
+                  name="backgroundSize"
+                  value="large"
+                  id="backgroundSizeLarge"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="input-objectSelector">
+            <input type="button" id="objectDropDown" />
+            <label for="objectDropDown">Select Objects (3 Minimum) : </label>
+            <div class="objectSelectorContent" id="objectSelectorList">
+              <span objectValue="wine-glass">Wine Glass</span>
+              <span objectValue="cup">Cup</span>
+              <span objectValue="fork">Fork</span>
+              <span objectValue="knife">Knife</span>
+              <span objectValue="spoon">Spoon</span>
+              <span objectValue="bowl">Bowl</span>
+              <span objectValue="banana">Banana</span>
+              <span objectValue="keyboard">Keyboard</span>
+              <span objectValue="cell-phone">Cell Phone</span>
+              <span objectValue="microwave">Microwave</span>
+              <span objectValue="oven">Oven</span>
+            </div>
+          </div>
+          <div class="input-noiseSelector">
+            <p>Select Noise Addition :</p>
+            <div class="noiseSelector">
+              <label for="noiseSizeSmall"
+                >Tiny
+                <input
+                  type="radio"
+                  name="noiseSize"
+                  value="tiny"
+                  id="noiseSizeSmall"
+                  checked
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="noiseSelector">
+              <label for="noiseSizeMedium"
+                >Medium
+                <input
+                  type="radio"
+                  name="noiseSize"
+                  value="medium"
+                  id="noiseSizeMedium"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="noiseSelector">
+              <label for="noiseSizeLarge"
+                >Large
+                <input
+                  type="radio"
+                  name="noiseSize"
+                  value="large"
+                  id="noiseSizeLarge"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="button-submitButton">
+            <input type="button" value="Register" id="registerBtn" />
+            <input type="button" value="Reset" id="clearBtn" />
+          </div>
+        </form>
+      </div>
+      <div class="login-dialogue">
+        <form>
+          <div class="userNamePhase">
+            <div class="userNameLoginField">
+              <input type="text" name="userNameLogin" id="userNameLogin" />
+              <label for="userNameLogin">User Name :</label>
+            </div>
+            <div class="userbackgroundSelect">
+              <select name="userbackgroundSelect" id="userbackgroundSelectInput" required>
+                <option value="mountain">Mountain</option>
+                <option value="sky">Sky</option>
+                <option value="waterfalls">Waterfalls</option>
+                <option value="river">River</option>
+                <option value="buildings">Buildings</option>
+                <option value="street">Street</option>
+                <option value="indoor">Indoor </option>
+              </select>
+              <label for="userbackgroundSelectInput">Select Background : </label>
+            </div>
+            <div class="userbackgroundSize">
+              <p>Select Background Size :</p>
+              <div class="userbackgroundSizeSelector">
+                <label for="userbackgroundSizeSmall"
+                  >Small
+                  <input
+                    type="radio"
+                    name="backgroundSize"
+                    value="small"
+                    id="userbackgroundSizeSmall"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="userbackgroundSizeSelector">
+                <label for="userbackgroundSizeMedium"
+                  >Medium
+                  <input
+                    type="radio"
+                    name="backgroundSize"
+                    value="medium"
+                    id="userbackgroundSizeMedium"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="userbackgroundSizeSelector">
+                <label for="userbackgroundSizeLarge"
+                  >Large
+                  <input
+                    type="radio"
+                    name="backgroundSize"
+                    value="large"
+                    id="userbackgroundSizeLarge"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="usernoiseSelector">
+              <p>Select Noise Addition :</p>
+              <div class="usernoiseSelector">
+                <label for="usernoiseSizeSmall"
+                  >Tiny
+                  <input
+                    type="radio"
+                    name="noiseSize"
+                    value="tiny"
+                    id="noiseSizeSmall"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="usernoiseSelector">
+                <label for="usernoiseSizeMedium"
+                  >Medium
+                  <input
+                    type="radio"
+                    name="noiseSize"
+                    value="medium"
+                    id="usernoiseSizeMedium"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="usernoiseSelector">
+                <label for="usernoiseSizeLarge"
+                  >Large
+                  <input
+                    type="radio"
+                    name="noiseSize"
+                    value="large"
+                    id="usernoiseSizeLarge"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="buttonField">
+              <input type="button" value="Next" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="objectSelectionPhase hidePhase">
+        <div class="image-content">
+          <div class="apple"></div>
+          <div class="cup"></div>
+          <div class="cell-phone"></div>
+          <div class="zebra"></div>
+          <div class="male"></div>
+          <div class="hand-bag"></div>
+          <div class="banana"></div>
+          <div class="female"></div>
+        </div>
+        <div class="buttonField">
+          <button class="cancelButton">Cancel</button>
+          <button class="moreButton">More</button>
+		  <button class="nextButton">Next</button>
+        </div>
+      </div>
+      <div class="form-overlay">
+        <div class="loginSlider">
+          <p>Already have an account?</p>
+          <button class="loginSliderBtn">LOGIN</button>
+        </div>
+        <div class="registrationSlider overlayDisabled">
+          <p>Haven't registered yet?</p>
+          <button class="registrationSliderBtn">REGISTER</button>
+        </div>
+      </div>
+      <div class="alertBox">
+        <p>Hello!</p>
+        <div class="btnContainer">
+          <button class="alertBoxBtn">Ok</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/object-drop-down.js"></script>
+  <script src="js/registration-validation.js"></script>
+  <script src="js/form-overlay.js"></script>
+  <script src="js/alert-box.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/login-handler.js"></script>
+  <script src="js/ajax-call.js"></script>
+</html>
